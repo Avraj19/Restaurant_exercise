@@ -1,9 +1,10 @@
-class Food_items:
+class Food_items():
 
-    def __int__(self, item, price, ingredients=None):
-        self.item = item
-        self.price = price
-
+    def __init__(self, item, price, ingredients=None):
         if ingredients is None:
             ingredients = []
         self.ingredients = ingredients
+        self.item = item
+        self.price = price
+
+
